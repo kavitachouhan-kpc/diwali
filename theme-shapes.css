@@ -1,0 +1,223 @@
+/* Modern, shape-led Diwali themes in the banner's navy / gold / lipstick-rose palette.
+   Everything is plain CSS (clip-path, border-radius, gradients) — no new image assets,
+   so each idea is cheap to port into the Shopify theme. */
+html[data-theme="slant"], html[data-theme="arch"], html[data-theme="notch"], html[data-theme="orbs"] {
+  --n-deep: #071637; --n: #0c2259; --n-2: #17357f;
+  --gold: #e9c27a; --gold-2: #f6dc9c; --gold-deep: #b8863b;
+  --rose: #c75b6e; --rose-2: #f8e3e6; --ivory: #fbf5ea;
+  --band-x: max(var(--gutter), calc((100vw - 1360px) / 2 + var(--gutter)));
+  --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath d='M0 60V32C240 0 480 0 720 30s480 32 720 2v28z' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+/* ---------- Shared: navy header, navy offer bar, full-bleed categories band ---------- */
+html[data-theme="slant"] .site-header, html[data-theme="arch"] .site-header,
+html[data-theme="notch"] .site-header, html[data-theme="orbs"] .site-header { background: var(--n-deep); }
+html[data-theme="slant"] .site-header .icon-btn, html[data-theme="arch"] .site-header .icon-btn,
+html[data-theme="notch"] .site-header .icon-btn, html[data-theme="orbs"] .site-header .icon-btn,
+html[data-theme="slant"] .desk-nav a, html[data-theme="arch"] .desk-nav a,
+html[data-theme="notch"] .desk-nav a, html[data-theme="orbs"] .desk-nav a { color: #fff; }
+html[data-theme="slant"] .logo img, html[data-theme="arch"] .logo img,
+html[data-theme="notch"] .logo img, html[data-theme="orbs"] .logo img { filter: brightness(0) invert(1); }
+html[data-theme="slant"] .cart-count, html[data-theme="arch"] .cart-count,
+html[data-theme="notch"] .cart-count, html[data-theme="orbs"] .cart-count { background: var(--gold); color: var(--n-deep); }
+html[data-theme="slant"] .search-wrap, html[data-theme="arch"] .search-wrap,
+html[data-theme="notch"] .search-wrap, html[data-theme="orbs"] .search-wrap { box-shadow: none; }
+html[data-theme="slant"] .search, html[data-theme="arch"] .search,
+html[data-theme="notch"] .search, html[data-theme="orbs"] .search { border-color: transparent; }
+html[data-theme="slant"] .offer-bar, html[data-theme="arch"] .offer-bar,
+html[data-theme="notch"] .offer-bar, html[data-theme="orbs"] .offer-bar { background: var(--n-deep); color: #fff; }
+html[data-theme="slant"] .offer-bar .teal, html[data-theme="arch"] .offer-bar .teal,
+html[data-theme="notch"] .offer-bar .teal, html[data-theme="orbs"] .offer-bar .teal { color: var(--gold-2); }
+html[data-theme="slant"] [data-sec="categories"], html[data-theme="arch"] [data-sec="categories"],
+html[data-theme="notch"] [data-sec="categories"], html[data-theme="orbs"] [data-sec="categories"] {
+  max-width: none; padding-left: var(--band-x); padding-right: var(--band-x);
+}
+
+
+/* =========================================================
+   10. SLANT CUT — diagonal section edges, two-tone splits, parallelogram accents
+   ========================================================= */
+html[data-theme="slant"] .countdown-wrap { background: var(--n-deep); padding-bottom: 8px; }
+html[data-theme="slant"] .countdown {
+  border-radius: 0; padding: 4px 24px; background: var(--gold); color: var(--n-deep); font-weight: 700;
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+html[data-theme="slant"] [data-sec="categories"] {
+  background: linear-gradient(162deg, var(--n-deep) 0 58%, var(--n) 58%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 36px), 0 100%);
+  padding-top: 18px; padding-bottom: 66px;
+}
+html[data-theme="slant"] .sec-title, html[data-theme="slant"] .ps-head h3 { font-weight: 800; letter-spacing: -.5px; color: var(--n); }
+html[data-theme="slant"] .sec-title::before, html[data-theme="slant"] .ps-head h3::before {
+  content: ''; display: inline-block; width: 7px; height: 18px; margin-right: 10px; vertical-align: -2px;
+  background: var(--gold); transform: skewX(-20deg);
+}
+html[data-theme="slant"] [data-sec="categories"] .sec-title { color: #fff; font-size: 24px; }
+html[data-theme="slant"] [data-sec="categories"] .sec-title::before { background: var(--rose); }
+html[data-theme="slant"] .btn-black {
+  border-radius: 0; background: var(--n); color: var(--gold-2);
+  clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+}
+html[data-theme="slant"] [data-sec="categories"] .btn-black { background: var(--gold); color: var(--n-deep); }
+html[data-theme="slant"] .cat-grid a { border-radius: 3px; }
+html[data-theme="slant"] .tab {
+  border: 0; border-radius: 0; padding: 7px 18px; background: #eef1f8; color: var(--n);
+  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+}
+html[data-theme="slant"] .tab.active { background: var(--n); color: var(--gold-2); }
+html[data-theme="slant"] .ps-head .view-all { color: var(--rose); font-weight: 600; }
+html[data-theme="slant"] .card-img { border-radius: 2px; }
+/* Ivory slanted bands */
+html[data-theme="slant"] [data-collection="trending"],
+html[data-theme="slant"] [data-collection="newArrivals"] {
+  background: var(--ivory); margin-top: -6px; padding-top: 54px; padding-bottom: 50px;
+  clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0 100%);
+}
+/* Navy slanted bands */
+html[data-theme="slant"] [data-collection="makeupFest"],
+html[data-theme="slant"] [data-collection="sets"] {
+  background: linear-gradient(162deg, var(--n) 0 62%, var(--n-2) 62%); margin-top: 16px; padding-top: 54px; padding-bottom: 54px;
+  clip-path: polygon(0 0, 100% 30px, 100% 100%, 0 calc(100% - 30px));
+}
+html[data-theme="slant"] [data-collection="makeupFest"] .ps-head h3,
+html[data-theme="slant"] [data-collection="sets"] .ps-head h3 { color: #fff; }
+html[data-theme="slant"] [data-collection="makeupFest"] .ps-head h2,
+html[data-theme="slant"] [data-collection="sets"] .ps-head h2 { color: #c6cfe6; }
+html[data-theme="slant"] [data-collection="makeupFest"] .view-all,
+html[data-theme="slant"] [data-collection="sets"] .view-all { color: var(--gold-2); }
+html[data-theme="slant"] [data-collection="sets"] .tab { background: rgba(255,255,255,.1); color: #dfe5f5; }
+html[data-theme="slant"] [data-collection="sets"] .tab.active { background: var(--gold); color: var(--n-deep); }
+html[data-theme="slant"] [data-collection="makeupFest"] .card,
+html[data-theme="slant"] [data-collection="sets"] .card { background: #fff; padding: 6px 6px 8px; }
+
+
+/* =========================================================
+   11. ARCH WINDOW — arched frames everywhere: a domed band label, arch tiles, dome panels
+   ========================================================= */
+html[data-theme="arch"] .countdown { background: var(--n); color: var(--gold-2); }
+html[data-theme="arch"] [data-sec="categories"] {
+  background: radial-gradient(ellipse 70% 50% at 50% 100%, var(--n-2), transparent), var(--n-deep);
+  margin-top: 58px; padding-top: 6px; padding-bottom: 30px;
+}
+/* The dome that rises out of the band and holds the title */
+html[data-theme="arch"] [data-sec="categories"]::before,
+html[data-theme="arch"] [data-sec="categories"]::after {
+  content: ''; position: absolute; left: 50%; transform: translateX(-50%);
+}
+html[data-theme="arch"] [data-sec="categories"]::before { top: -44px; width: 270px; height: 64px; background: var(--n-deep); border-radius: 135px 135px 0 0; }
+html[data-theme="arch"] [data-sec="categories"]::after { top: -34px; width: 248px; height: 60px; border: 1.5px solid var(--gold); border-bottom: 0; border-radius: 124px 124px 0 0; }
+html[data-theme="arch"] [data-sec="categories"] .sec-title { margin-top: -26px; color: #fff; text-align: center; font-weight: 700; }
+html[data-theme="arch"] [data-sec="categories"] .sec-title::before {
+  content: 'The Diwali edit'; display: block; border: 0; width: auto; height: auto; margin: 0 0 2px;
+  font: 600 10px/1.4 Inter, sans-serif; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold);
+}
+html[data-theme="arch"] .cat-grid a { border-radius: 999px 999px 10px 10px; box-shadow: 0 0 0 1.5px rgba(233, 194, 122, .55); }
+html[data-theme="arch"] [data-sec="categories"] .btn-black { background: var(--gold); color: var(--n-deep); border-radius: 999px; }
+html[data-theme="arch"] .btn-black { border-radius: 999px; background: var(--n); }
+html[data-theme="arch"] .sec-title, html[data-theme="arch"] .ps-head h3 { color: var(--n); font-weight: 700; }
+html[data-theme="arch"] .sec-title::before, html[data-theme="arch"] .ps-head h3::before {
+  content: ''; display: inline-block; width: 11px; height: 15px; margin-right: 8px; vertical-align: -1px;
+  border: 2px solid var(--rose); border-bottom: 0; border-radius: 7px 7px 0 0;
+}
+html[data-theme="arch"] .ps-head .view-all { color: var(--n-2); font-weight: 600; }
+html[data-theme="arch"] .tab { border-radius: 999px; }
+html[data-theme="arch"] .tab.active { background: var(--n); border-color: var(--n); color: var(--gold-2); }
+html[data-theme="arch"] .card-img { border-radius: 50% 50% 8px 8px / 26% 26% 8px 8px; border-color: #e6dcc7; }
+html[data-theme="arch"] .celeb-row a, html[data-theme="arch"] .peek-carousel a { border-radius: 999px 999px 12px 12px; }
+/* Dome-topped ivory panels */
+html[data-theme="arch"] [data-collection="trending"],
+html[data-theme="arch"] [data-collection="newArrivals"],
+html[data-theme="arch"] [data-collection="sets"] {
+  background: var(--ivory); margin-top: 22px; padding-top: 34px; padding-bottom: 24px;
+  border-radius: 50% 50% 0 0 / 42px 42px 0 0;
+}
+
+
+/* =========================================================
+   12. NOTCHED — interlocking stepped corners & tag-shaped headings (Zepto-style blocks)
+   ========================================================= */
+html[data-theme="notch"] .countdown {
+  border-radius: 0; background: var(--rose); color: #fff; font-weight: 600;
+  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
+}
+html[data-theme="notch"] [data-sec="categories"] { background: var(--n-deep); margin-top: 28px; padding-top: 26px; padding-bottom: 32px; margin-bottom: 10px; }
+/* Stepped (crenellated) top & bottom edges */
+html[data-theme="notch"] [data-sec="categories"]::before,
+html[data-theme="notch"] [data-sec="categories"]::after,
+html[data-theme="notch"] [data-collection="newArrivals"]::before,
+html[data-theme="notch"] [data-collection="newArrivals"]::after {
+  content: ''; position: absolute; left: 0; right: 0; height: 10px;
+  background: linear-gradient(90deg, var(--edge) 50%, transparent 0) 0 0 / 28px 10px repeat-x;
+}
+html[data-theme="notch"] [data-sec="categories"] { --edge: var(--n-deep); }
+html[data-theme="notch"] [data-sec="categories"]::before, html[data-theme="notch"] [data-collection="newArrivals"]::before { top: -10px; }
+html[data-theme="notch"] [data-sec="categories"]::after, html[data-theme="notch"] [data-collection="newArrivals"]::after { bottom: -10px; background-position: 14px 0; }
+/* Tag-shaped headings with one clipped corner */
+html[data-theme="notch"] .sec-title, html[data-theme="notch"] .ps-head h3 {
+  display: inline-block; width: auto; padding: 4px 18px 4px 12px; font-size: 18px; font-weight: 700; letter-spacing: -.3px;
+  background: var(--n); color: #fff; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+html[data-theme="notch"] .sec-title.container { margin-left: var(--gutter); }
+html[data-theme="notch"] .sec-title.center { display: table; margin-left: auto; margin-right: auto; }
+html[data-theme="notch"] [data-sec="categories"] .sec-title { background: var(--gold); color: var(--n-deep); }
+html[data-theme="notch"] .ps-head h2 { margin-top: 8px; color: #5b6788; }
+html[data-theme="notch"] .ps-head .view-all { color: var(--rose); font-weight: 600; }
+/* Interlocking tiles: alternate a stepped notch top-right / top-left */
+html[data-theme="notch"] .cat-grid a { border-radius: 0; clip-path: polygon(0 0, calc(100% - 16px) 0, calc(100% - 16px) 16px, 100% 16px, 100% 100%, 0 100%); }
+html[data-theme="notch"] .cat-grid a:nth-child(even) { clip-path: polygon(16px 0, 100% 0, 100% 100%, 0 100%, 0 16px, 16px 16px); }
+html[data-theme="notch"] [data-sec="categories"] .btn-black { background: var(--gold); color: var(--n-deep); }
+html[data-theme="notch"] .btn-black { border-radius: 0; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px)); }
+html[data-theme="notch"] .tab { border: 0; border-radius: 0; background: #eef1f8; color: var(--n); clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); }
+html[data-theme="notch"] .tab.active { background: var(--rose); color: #fff; }
+html[data-theme="notch"] .card-img { border-radius: 0; clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%); }
+html[data-theme="notch"] [data-collection="newArrivals"] { --edge: var(--ivory); background: var(--ivory); margin: 26px 0 10px; padding-top: 24px; padding-bottom: 26px; }
+
+
+/* =========================================================
+   13. GLOW WAVE — abstract: soft gold & rose light orbs, wave edges, gradient type
+   ========================================================= */
+html[data-theme="orbs"] .countdown-wrap { background: var(--n-deep); padding-bottom: 6px; }
+html[data-theme="orbs"] .countdown {
+  background: rgba(255, 255, 255, .08); color: var(--gold-2); border: 1px solid rgba(233, 194, 122, .55);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+html[data-theme="orbs"] [data-sec="categories"] {
+  background:
+    radial-gradient(circle at 10% 22%, rgba(199, 91, 110, .55), transparent 30%),
+    radial-gradient(circle at 92% 40%, rgba(233, 194, 122, .42), transparent 28%),
+    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(23, 53, 127, .95), transparent),
+    var(--n-deep);
+  padding-top: 14px; padding-bottom: 62px; overflow: hidden;
+}
+html[data-theme="orbs"] [data-sec="categories"]::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 36px;
+  background: var(--wave) 0 100% / 100% 100% no-repeat;
+}
+html[data-theme="orbs"] [data-sec="categories"]::before {
+  content: ''; position: absolute; right: -70px; top: -50px; width: 230px; height: 230px; opacity: .16;
+  background: var(--fw-burst) center / contain no-repeat;
+}
+html[data-theme="orbs"] [data-sec="categories"] .sec-title {
+  text-align: center; font-size: 26px; font-weight: 800; letter-spacing: -.6px;
+  background: linear-gradient(90deg, var(--gold-2), #f4b8a8); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="orbs"] .sec-title, html[data-theme="orbs"] .ps-head h3 {
+  font-weight: 800; letter-spacing: -.6px;
+  background: linear-gradient(90deg, var(--n) 20px, var(--rose) 300px); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="orbs"] .cat-grid a { border-radius: 16px; box-shadow: 0 10px 24px rgba(0, 0, 0, .35); }
+html[data-theme="orbs"] .btn-black { border-radius: 999px; background: var(--n); color: var(--gold-2); }
+html[data-theme="orbs"] [data-sec="categories"] .btn-black { background: linear-gradient(90deg, var(--gold), #f3b6a0); color: var(--n-deep); }
+html[data-theme="orbs"] .ps-head .view-all { color: var(--rose); font-weight: 600; }
+html[data-theme="orbs"] .tab { border-radius: 999px; }
+html[data-theme="orbs"] .tab.active { background: linear-gradient(90deg, var(--n), var(--n-2)); border-color: transparent; color: var(--gold-2); }
+html[data-theme="orbs"] .card-img { border-radius: 16px; }
+html[data-theme="orbs"] .card-benefit { border-radius: 999px; padding: 2px 9px; }
+html[data-theme="orbs"] .card-cta button, html[data-theme="orbs"] .qty { border-radius: 12px; }
+html[data-theme="orbs"] [data-collection="trending"],
+html[data-theme="orbs"] [data-collection="newArrivals"],
+html[data-theme="orbs"] [data-collection="sets"] {
+  background:
+    radial-gradient(circle at 100% 0, rgba(233, 194, 122, .26), transparent 38%),
+    radial-gradient(circle at 0 100%, rgba(199, 91, 110, .14), transparent 42%);
+}

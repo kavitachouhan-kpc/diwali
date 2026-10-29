@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilgrim Homepage — Current</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="theme.css?v=3">
+  <link rel="stylesheet" href="theme-navy.css?v=1">
+  <link rel="stylesheet" href="theme-shapes.css?v=1">
+  <link rel="stylesheet" href="theme-mix.css?v=6">
+</head>
+<body>
+
+  <!-- Header + search -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-bar container">
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu">
+        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 1h20M1 8h20M1 15h20"/></svg>
+      </button>
+      <nav class="desk-nav" id="deskNav" aria-label="Primary"></nav>
+      <a class="logo" href="#" aria-label="Pilgrim India"><img id="logoImg" alt="pilgrim" width="110" height="30"></a>
+      <div class="header-actions">
+        <button class="icon-btn desk-only" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn desk-only" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+        </button>
+        <a class="icon-btn" href="#" aria-label="Track order">
+          <svg width="30" height="24" viewBox="0 0 34 26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><circle cx="9" cy="8" r="7"/><path d="M9 4v4l2.5 2"/><path d="M17 6h7l5 6v7h-3M17 6v13h-5M5 15v4h2"/><circle cx="9.5" cy="20.5" r="2.5"/><circle cx="23.5" cy="20.5" r="2.5"/><path d="M12 19.5h9"/></svg>
+        </a>
+        <a class="icon-btn cart-btn" href="#" aria-label="Cart">
+          <svg width="26" height="24" viewBox="0 0 26 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M1 2h4l3 13h13l3-9H7"/><circle cx="10" cy="20" r="1.8"/><circle cx="19" cy="20" r="1.8"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="search-wrap container">
+      <label class="search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a9a9a" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="searchInput" placeholder="Search For Lipsticks" aria-label="Search">
+      </label>
+    </div>
+  </header>
+
+  <!-- Mobile menu drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="drawer" aria-label="Navigation">
+    <div class="drawer-head">
+      <span>Menu</span>
+      <button class="icon-btn" id="drawerClose" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" stroke="currentColor" stroke-width="1.8"><path d="m2 2 14 14M16 2 2 16"/></svg>
+      </button>
+    </div>
+    <ul class="drawer-list" id="drawerList"></ul>
+  </aside>
+
+  <main id="main">
+    <!-- 1. Hero sale banner -->
+    <section class="hero">
+      <a href="#"><picture>
+        <source media="(min-width: 990px)" id="heroDesktop">
+        <img id="heroMobile" alt="24 Hours Only Sale — Buy 1 Get 1 Free" width="1000" height="650">
+      </picture></a>
+    </section>
+
+    <!-- 2. Countdown -->
+    <div class="countdown-wrap"><div class="countdown">Sale Ends In: <span id="countdown">--h --m --s</span></div></div>
+
+    <!-- 3. Shop By Categories -->
+    <section class="section container" data-sec="categories">
+      <h3 class="sec-title">Shop By Categories</h3>
+      <div class="cat-grid" id="catGrid"></div>
+      <a class="btn-black" href="#">View all products ➔</a>
+    </section>
+
+    <!-- 4. Trending Now -->
+    <section class="section product-section" data-collection="trending"></section>
+
+    <!-- 5. Rosemary banner -->
+    <section class="banner"><a href="#"><picture>
+      <source media="(min-width: 990px)" id="rosemaryDesktop">
+      <img id="rosemaryMobile" alt="New & Improved Spanish Rosemary Anti-Hairfall Shampoo" width="1000" height="625">
+    </picture></a></section>
+
+    <!-- 6. Buy 2 Pay For 1 -->
+    <section class="section">
+      <h3 class="sec-title container">Buy 2 Pay For 1</h3>
+      <div class="peek-carousel" id="b2p1"></div>
+      <div class="dots" id="b2p1Dots"></div>
+    </section>
+
+    <!-- 7. Makeup Fest -->
+    <section class="section product-section" data-collection="makeupFest"></section>
+
+    <!-- 8. Monsoon Essentials -->
+    <section class="section product-section" data-collection="monsoon"></section>
+
+    <!-- 9. Monsoon banner -->
+    <section class="banner"><a href="#"><img id="monsoonBanner" alt="Monsoon Essentials — Pick your perfect shampoo" width="1000" height="650"></a></section>
+
+    <!-- 10. Ingredient of the week -->
+    <section class="section ingredient-week" data-sec="ingredient">
+      <p class="eyebrow">Ingredient of the week</p>
+      <h3 class="sec-title center" id="iowName"></h3>
+      <div class="iow-track" id="iowTrack"></div>
+      <div class="container"><a class="btn-black" href="#">View All</a></div>
+    </section>
+
+    <!-- 11. What are you looking for -->
+    <section class="section" data-sec="looking">
+      <h3 class="sec-title container t-green">What Are You Looking For Today?</h3>
+      <div class="circle-row" id="lookingFor"></div>
+    </section>
+
+    <!-- 12. Skincare infused makeup -->
+    <section class="section product-section" data-collection="skincareMakeup"></section>
+
+    <!-- 13. New Arrivals -->
+    <section class="section product-section" data-collection="newArrivals"></section>
+
+    <!-- 14. Save with sets -->
+    <section class="section product-section" data-collection="sets"></section>
+
+    <!-- 15. Most loved bestsellers (shoppable videos) -->
+    <section class="section">
+      <h3 class="sec-title container">Most Loved Bestsellers</h3>
+      <div class="video-row" id="videoRow"></div>
+    </section>
+
+    <!-- 16. Shop by category -->
+    <section class="section container" data-sec="shopcat">
+      <h3 class="sec-title">Shop by category</h3>
+      <div class="arch-grid" id="archGrid"></div>
+    </section>
+
+    <!-- 17. Shop by ingredients -->
+    <section class="section" data-sec="ingredients">
+      <h3 class="sec-title container t-plum">Shop by Ingredients</h3>
+      <div class="circle-row ingredients" id="ingredients"></div>
+    </section>
+
+    <!-- 18. Celebrity favourites -->
+    <section class="section" data-sec="celebs">
+      <h3 class="sec-title container t-cyan">Feel the Glamour: Celebrity Favorites</h3>
+      <div class="celeb-row" id="celebRow"></div>
+    </section>
+
+    <!-- 19. Our promise -->
+    <section class="section container promise" data-sec="promise">
+      <img id="promiseImg" alt="Vegan, Dermatologically tested, No toxic chemicals, Plastic positive" width="1080" height="1080">
+      <div>
+        <h3 class="sec-title center">Our Promise</h3>
+        <p id="promiseText"></p>
+      </div>
+    </section>
+
+    <!-- 20. Testimonials -->
+    <section class="section" data-sec="testimonials">
+      <h2 class="sec-title center">Customer Testimonials</h2>
+      <div class="testi-row" id="testiRow"></div>
+      <div class="progress container"><span id="testiProgress"></span></div>
+    </section>
+
+    <!-- 21. Tribe CTA -->
+    <div class="tribe container"><a href="#">Hear from our Pilgrim Tribe→</a></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <img class="footer-strip" id="footerStrip" alt="Discover world's best beauty secrets" width="800" height="160">
+    <div class="footer-body container">
+      <div class="footer-cols" id="footerCols"></div>
+      <div class="social">
+        <p>You'll love us here</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M14 8V6.5c0-.8.2-1.3 1.4-1.3H17V2.2C16.7 2.1 15.7 2 14.6 2 12.2 2 10.6 3.4 10.6 6.1V8H8v3.3h2.6V22H14V11.3h2.7L17 8h-3Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 8.2c-.2-1.6-1-2.6-2.6-2.8C17.2 5.1 12 5.1 12 5.1s-5.2 0-7.4.3C3 5.6 2.2 6.6 2 8.2 1.8 9.4 1.8 12 1.8 12s0 2.6.2 3.8c.2 1.6 1 2.6 2.6 2.8 2.2.3 7.4.3 7.4.3s5.2 0 7.4-.3c1.6-.2 2.4-1.2 2.6-2.8.2-1.2.2-3.8.2-3.8s0-2.6-.2-3.8ZM10 15.1V8.9l5.2 3.1-5.2 3.1Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5Z"/></svg></a>
+        </div>
+      </div>
+      <p class="copyright">© 2026, Pilgrim India</p>
+    </div>
+  </footer>
+
+  <!-- Fixed bottom: offer bar + nav -->
+  <div class="bottom-fixed" id="bottomFixed">
+    <button class="offer-bar" id="offerBar">
+      <span>Add <b class="teal" id="offerNeed">2</b> more eligible product/s to avail <b class="teal">Buy 1 Get 1 Free</b></span>
+      <svg width="14" height="8" viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m1 7 6-6 6 6"/></svg>
+    </button>
+    <nav class="bottom-nav" id="bottomNav">
+      <a href="#" class="active"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 10.5V22h7v-6h6v6h7V10.5L12 2Z"/></svg>Home</a>
+      <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Categories</a>
+      <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Account</a>
+      <a href="#"><svg width="22" height="22" viewBox="0 0 26 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M1 2h4l3 13h13l3-9H7"/><circle cx="10" cy="20" r="1.8"/><circle cx="19" cy="20" r="1.8"/></svg>Cart</a>
+    </nav>
+  </div>
+
+  <!-- Offer sheet (B1G1 progress) -->
+  <div class="sheet-backdrop" id="sheetBackdrop"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-label="Offers">
+    <div class="sheet-grip"></div>
+    <h4>Unlock more offers</h4>
+    <ul class="tiers" id="tiers">
+      <li data-n="2">Buy 1 Get 1 Free</li>
+      <li data-n="4">Buy 2 Get 2 Free</li>
+      <li data-n="6">Buy 3 Get 3 Free</li>
+    </ul>
+    <p class="sheet-note">Get a <b>FREE Pilgrim Vanity Bag</b> on orders worth ₹699 or more.</p>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+  <script src="theme.js?v=9"></script>
+</body>
+</html>

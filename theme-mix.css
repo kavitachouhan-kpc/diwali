@@ -1,0 +1,286 @@
+/* Starry set — the chosen direction plus two variations. Assets generated as data URIs. */
+:root {
+  --fw-dots: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Ccircle cx='231' cy='286' r='5' fill='%23f6c66e' opacity='0.3'/%3E%3Ccircle cx='260' cy='300' r='2' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='411' cy='262' r='5' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='48' cy='228' r='3' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='46' cy='275' r='1.5' fill='%23f6c66e' opacity='0.3'/%3E%3Ccircle cx='231' cy='334' r='8' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='319' cy='7' r='8' fill='%23f6c66e' opacity='0.08'/%3E%3Ccircle cx='30' cy='18' r='2' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='307' cy='15' r='5' fill='%23f6c66e' opacity='0.22'/%3E%3Ccircle cx='225' cy='302' r='2' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='327' cy='150' r='5' fill='%23f6c66e' opacity='0.08'/%3E%3Ccircle cx='339' cy='43' r='5' fill='%23f6c66e' opacity='0.22'/%3E%3Ccircle cx='208' cy='282' r='1.5' fill='%23f6c66e' opacity='0.22'/%3E%3Ccircle cx='161' cy='388' r='2' fill='%23f6c66e' opacity='0.22'/%3E%3Ccircle cx='15' cy='35' r='8' fill='%23f6c66e' opacity='0.08'/%3E%3Ccircle cx='205' cy='55' r='3' fill='%23f6c66e' opacity='0.3'/%3E%3Ccircle cx='34' cy='8' r='1.5' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='107' cy='26' r='5' fill='%23f6c66e' opacity='0.3'/%3E%3Ccircle cx='362' cy='203' r='5' fill='%23f6c66e' opacity='0.08'/%3E%3Ccircle cx='289' cy='322' r='2' fill='%23f6c66e' opacity='0.22'/%3E%3Ccircle cx='172' cy='44' r='3' fill='%23f6c66e' opacity='0.22'/%3E%3Ccircle cx='7' cy='209' r='1.5' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='126' cy='361' r='1.5' fill='%23f6c66e' opacity='0.08'/%3E%3Ccircle cx='30' cy='238' r='5' fill='%23f6c66e' opacity='0.14'/%3E%3Ccircle cx='349' cy='286' r='2' fill='%23f6c66e' opacity='0.3'/%3E%3Ccircle cx='260' cy='97' r='2' fill='%23f6c66e' opacity='0.3'/%3E%3C/svg%3E");
+  --curtain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='52'%3E%3Cpath d='M0 1.5H80' stroke='%23d9b46a' stroke-width='1.2'/%3E%3Cpath d='M10 1.5V22' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='10' cy='9' rx='2.3' ry='2.9' fill='%23ffd76a'/%3E%3Cellipse cx='10' cy='18.5' rx='2.3' ry='2.9' fill='%23ffb347'/%3E%3Cpath d='M30 1.5V40' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='30' cy='9' rx='2.3' ry='2.9' fill='%23ffb347'/%3E%3Cellipse cx='30' cy='18.5' rx='2.3' ry='2.9' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='28.0' rx='2.3' ry='2.9' fill='%23ffd76a'/%3E%3Cellipse cx='30' cy='37.5' rx='2.3' ry='2.9' fill='%23ffb347'/%3E%3Cpath d='M50 1.5V28' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='50' cy='9' rx='2.3' ry='2.9' fill='%23fff0a8'/%3E%3Cellipse cx='50' cy='18.5' rx='2.3' ry='2.9' fill='%23ffd76a'/%3E%3Cellipse cx='50' cy='28.0' rx='2.3' ry='2.9' fill='%23ffb347'/%3E%3Cpath d='M70 1.5V48' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='70' cy='9' rx='2.3' ry='2.9' fill='%23ffd76a'/%3E%3Cellipse cx='70' cy='18.5' rx='2.3' ry='2.9' fill='%23ffb347'/%3E%3Cellipse cx='70' cy='28.0' rx='2.3' ry='2.9' fill='%23fff0a8'/%3E%3Cellipse cx='70' cy='37.5' rx='2.3' ry='2.9' fill='%23ffd76a'/%3E%3Cellipse cx='70' cy='47.0' rx='2.3' ry='2.9' fill='%23ffb347'/%3E%3C/svg%3E");
+  --div-stars: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='22'%3E%3Cpath d='M30 1C31.2 8.0 33.0 9.8 40 11C33.0 12.2 31.2 14.0 30 21C28.8 14.0 27.0 12.2 20 11C27.0 9.8 28.8 8.0 30 1z' fill='%23d4a03a'/%3E%3Cpath d='M12 8.5C12.54 11.65 13.35 12.46 16.5 13C13.35 13.54 12.54 14.35 12 17.5C11.46 14.35 10.65 13.54 7.5 13C10.65 12.46 11.46 11.65 12 8.5z' fill='%23d4a03a'/%3E%3Cpath d='M48 4.5C48.54 7.65 49.35 8.46 52.5 9C49.35 9.54 48.54 10.35 48 13.5C47.46 10.35 46.65 9.54 43.5 9C46.65 8.46 47.46 7.65 48 4.5z' fill='%23d4a03a'/%3E%3Ccircle cx='4' cy='6' r='1.2' fill='%23e9c27a'/%3E%3Ccircle cx='56' cy='17' r='1.2' fill='%23e9c27a'/%3E%3C/svg%3E");
+  --div-slash: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='14'%3E%3Cg fill='%23d4a03a'%3E%3Cpath d='M6 13l6-12h5l-6 12z'/%3E%3Cpath d='M22 13l6-12h5l-6 12z' opacity='.75'/%3E%3Cpath d='M38 13l6-12h5l-6 12z' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* =========================================================
+   STARRY SET — shared base (html.starry-base, set by theme.js)
+   Navy & gold from Starry Panels, Inter headings (gold gradient in panels), string-lights header from Maroon & Gold,
+   flickering diyas on headings from Diya Glow.
+   Core UI stays as live: tabs, CTAs, countdown, offer bar, footer.
+   Navy panels (.sp) = Trending, Makeup Fest, New Arrivals, Save with Sets.
+   ========================================================= */
+html.starry-base {
+  --n-deep: #071637; --n: #0c2259; --n-2: #17357f;
+  --gold: #e9c27a; --gold-2: #f6dc9c;
+  --gold-text: linear-gradient(180deg, #fbe7b0, #e3b25e 60%, #c28a3a);
+}
+
+/* Header: navy with hanging string lights */
+html.starry-base .site-header { background: var(--n-deep); }
+html.starry-base .site-header .icon-btn, html.starry-base .desk-nav a { color: #fff; }
+html.starry-base .logo img { filter: brightness(0) invert(1); }
+html.starry-base .cart-count { background: var(--gold); color: var(--n-deep); }
+html.starry-base .search-wrap { box-shadow: none; padding-bottom: 14px; }
+html.starry-base .search { border-color: transparent; }
+html.starry-base .dw-lights { display: block; }
+
+/* Headings on white: navy serif with a flickering diya */
+html.starry-base .sec-title, html.starry-base .ps-head h3 {
+  font-family: Inter, sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.4px; color: var(--n);
+}
+html.starry-base .sec-title::before, html.starry-base .ps-head h3::before {
+  content: ''; display: inline-block; width: 22px; height: 20px; margin-right: 6px; vertical-align: -2px;
+  background: var(--diya) center / contain no-repeat;
+  transform-origin: 50% 100%; animation: dwFlicker 2.2s ease-in-out infinite;
+}
+html.starry-base .ps-head h2 { color: #5b6788; }
+
+/* Navy panels: lights along the top */
+html.starry-base .sp {
+  position: relative; overflow: hidden; margin-top: 22px; padding-top: 40px; padding-bottom: 26px;
+  background: var(--n-deep);
+}
+html.starry-base .sp::after {
+  content: ''; position: absolute; left: 0; right: 0; top: -2px; height: 26px; z-index: 2;
+  background: var(--lights) 0 0 / 60px 26px repeat-x;
+  filter: drop-shadow(0 0 3px rgba(255, 200, 80, .9));
+  animation: dwTwinkle 1.8s ease-in-out infinite alternate;
+}
+html.starry-base .sp .ps-head h3 {
+  font: 800 24px/1.25 Inter, sans-serif; letter-spacing: -.5px;
+  background: var(--gold-text); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html.starry-base .sp .ps-head h3::before { width: 24px; height: 22px; vertical-align: -3px; }
+html.starry-base .sp .ps-head h2 { color: #c9d2ea; font-weight: 500; }
+/* View All keeps its live colours; the white pill (as on the live site) keeps it readable on navy */
+html.starry-base .sp .view-all { background: #fff; padding: 4px 10px; border-radius: 8px; }
+/* The live active tab is a 5% teal tint that vanishes on navy; same tint pre-mixed on white */
+html.starry-base .sp .tab.active { background: #f2f9f9; }
+html.starry-base .sp .card { background: #fff; border-radius: 12px; padding: 6px 6px 8px; }
+html.starry-base .sp .card-img { border: 0; }
+
+/* Divider between plain (no-background) sections: twinkling gold stars on a fading rule */
+html.starry-base [data-sec="looking"]::before,
+html.starry-base [data-collection="skincareMakeup"]::before,
+html.starry-base [data-sec="ingredients"]::before,
+html.starry-base [data-sec="celebs"]::before {
+  content: ''; display: block; width: 260px; max-width: 72%; height: 22px; margin: 4px auto 22px;
+  background:
+    var(--div-stars) center / 60px 22px no-repeat,
+    linear-gradient(90deg, transparent, #d9a441 35%, transparent 44%, transparent 56%, #d9a441 65%, transparent) center / 100% 1px no-repeat;
+  animation: dwTwinkle 2.4s ease-in-out infinite alternate;
+}
+
+
+/* =========================================================
+   A. STARRY MIX — full-width navy panels with a string of lights along the top
+   (the base above, nothing extra)
+   ========================================================= */
+
+
+/* =========================================================
+   B. CURTAIN LIGHTS (html.curtain-base — shared by Curtain Lights, Curtain Day, Curtain Night)
+   — full-width panels with curtain-style strands of
+   different lengths; dividers are a short swag of lights
+   ========================================================= */
+html.curtain-base .sp { padding-top: 66px; }
+html.curtain-base .sp::after {
+  top: 0; height: 52px;
+  background: var(--curtain) 0 0 / 80px 52px repeat-x;
+}
+/* Lights stay fully lit (no dim/glow pulse): panel curtains, header string, divider swags */
+html.curtain-base .sp::after,
+html.curtain-base .dw-lights,
+html.curtain-base :is([data-sec="looking"], [data-collection="skincareMakeup"], [data-sec="ingredients"], [data-sec="celebs"])::before,
+html.curtain-base[data-divider] :is([data-sec="looking"], [data-collection="skincareMakeup"], [data-sec="ingredients"], [data-sec="celebs"])::before { animation: none; opacity: 1; }
+html.curtain-base [data-sec="looking"]::before,
+html.curtain-base [data-collection="skincareMakeup"]::before,
+html.curtain-base [data-sec="ingredients"]::before,
+html.curtain-base [data-sec="celebs"]::before {
+  height: 26px;
+  background:
+    var(--lights) calc(50% - 30px) 0 / 60px 26px no-repeat,
+    var(--lights) calc(50% + 30px) 0 / 60px 26px no-repeat,
+    linear-gradient(90deg, transparent, #d9b46a) left 3px / 70px 1px no-repeat,
+    linear-gradient(90deg, #d9b46a, transparent) right 3px / 70px 1px no-repeat;
+  filter: drop-shadow(0 0 3px rgba(255, 200, 80, .8));
+}
+
+
+/* =========================================================
+   C. SLANT GLOW — panels cut on a diagonal with glowing gold edges,
+   embers drifting upward; dividers are slanted gold dashes
+   ========================================================= */
+html[data-theme="slantglow"] .sp {
+  margin-top: 12px; padding-top: 56px; padding-bottom: 54px;
+  clip-path: polygon(0 28px, 100% 0, 100% calc(100% - 28px), 0 100%);
+  animation: emberDrift 60s linear infinite;
+}
+@keyframes emberDrift { to { background-position: 0 -420px, 0 0, 0 0; } }
+html[data-theme="slantglow"] .sp::before,
+html[data-theme="slantglow"] .sp::after {
+  content: ''; position: absolute; left: 0; right: 0; height: 28px; z-index: 2;
+  background: linear-gradient(to top right, transparent calc(50% - 2px), var(--gold) 50%, transparent calc(50% + 2px));
+  filter: drop-shadow(0 0 4px rgba(246, 200, 110, .9));
+  animation: dwTwinkle 2.2s ease-in-out infinite alternate;
+}
+html[data-theme="slantglow"] .sp::after { top: 0; }
+html[data-theme="slantglow"] .sp::before { bottom: 0; }
+html[data-theme="slantglow"] [data-sec="looking"]::before,
+html[data-theme="slantglow"] [data-collection="skincareMakeup"]::before,
+html[data-theme="slantglow"] [data-sec="ingredients"]::before,
+html[data-theme="slantglow"] [data-sec="celebs"]::before {
+  height: 14px;
+  background:
+    var(--div-slash) center / 54px 14px no-repeat,
+    linear-gradient(90deg, transparent, #d9a441 35%, transparent 42%, transparent 58%, #d9a441 65%, transparent) center / 100% 1px no-repeat;
+}
+:root {
+  --casc-a: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='90'%3E%3Cpath d='M0 1.5H60' stroke='%23d9b46a' stroke-width='1.2'/%3E%3Cpath d='M7.5 1.5V60' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='7.5' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='7.5' cy='24' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='7.5' cy='40' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='7.5' cy='56' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M22.5 1.5V84' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='22.5' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='22.5' cy='24' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='22.5' cy='40' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='22.5' cy='56' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='22.5' cy='72' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M37.5 1.5V46' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='37.5' cy='8' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='37.5' cy='24' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='37.5' cy='40' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M52.5 1.5V72' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='52.5' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='52.5' cy='24' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='52.5' cy='40' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='52.5' cy='56' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='52.5' cy='72' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3C/svg%3E");
+  --casc-b: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='90'%3E%3Cellipse cx='7.5' cy='16' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='7.5' cy='32' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='7.5' cy='48' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='22.5' cy='16' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='22.5' cy='32' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='22.5' cy='48' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='22.5' cy='64' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='22.5' cy='80' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='37.5' cy='16' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='37.5' cy='32' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='52.5' cy='16' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='52.5' cy='32' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='52.5' cy='48' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='52.5' cy='64' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3C/svg%3E");
+  --edge-l: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='132' height='92'%3E%3Cpath d='M0 1.5H132' stroke='%23d9b46a' stroke-width='1.2'/%3E%3Cpath d='M6 1.5V88' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='6' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='6' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='6' cy='26' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='6' cy='35' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='6' cy='44' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='6' cy='53' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='6' cy='62' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='6' cy='71' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='6' cy='80' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cpath d='M18 1.5V81' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='18' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='18' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='18' cy='26' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='18' cy='35' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='18' cy='44' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='18' cy='53' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='18' cy='62' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='18' cy='71' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='18' cy='80' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M30 1.5V74' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='30' cy='8' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='17' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='30' cy='26' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='30' cy='35' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='44' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='30' cy='53' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='30' cy='62' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='71' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M42 1.5V67' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='42' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='42' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='42' cy='26' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='42' cy='35' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='42' cy='44' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='42' cy='53' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='42' cy='62' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M54 1.5V60' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='54' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='54' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='54' cy='26' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='54' cy='35' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='54' cy='44' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='54' cy='53' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M66 1.5V53' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='66' cy='8' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='66' cy='17' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='66' cy='26' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='66' cy='35' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='66' cy='44' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='66' cy='53' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M78 1.5V46' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='78' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='78' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='78' cy='26' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='78' cy='35' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='78' cy='44' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M90 1.5V39' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='90' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='90' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='90' cy='26' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='90' cy='35' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M102 1.5V32' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='102' cy='8' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='102' cy='17' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='102' cy='26' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M114 1.5V25' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='114' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='114' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M126 1.5V18' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='126' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='126' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3C/svg%3E");
+  --edge-r: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='132' height='92'%3E%3Cg transform='translate%28132 0%29 scale%28-1 1%29'%3E%3Cpath d='M0 1.5H132' stroke='%23d9b46a' stroke-width='1.2'/%3E%3Cpath d='M6 1.5V88' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='6' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='6' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='6' cy='26' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='6' cy='35' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='6' cy='44' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='6' cy='53' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='6' cy='62' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='6' cy='71' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='6' cy='80' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cpath d='M18 1.5V81' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='18' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='18' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='18' cy='26' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='18' cy='35' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='18' cy='44' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='18' cy='53' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='18' cy='62' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='18' cy='71' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='18' cy='80' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M30 1.5V74' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='30' cy='8' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='17' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='30' cy='26' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='30' cy='35' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='44' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='30' cy='53' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='30' cy='62' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='71' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M42 1.5V67' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='42' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='42' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='42' cy='26' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='42' cy='35' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='42' cy='44' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='42' cy='53' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='42' cy='62' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M54 1.5V60' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='54' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='54' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='54' cy='26' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='54' cy='35' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='54' cy='44' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='54' cy='53' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M66 1.5V53' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='66' cy='8' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='66' cy='17' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='66' cy='26' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='66' cy='35' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='66' cy='44' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='66' cy='53' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M78 1.5V46' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='78' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='78' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='78' cy='26' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='78' cy='35' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='78' cy='44' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M90 1.5V39' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='90' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='90' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='90' cy='26' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='90' cy='35' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M102 1.5V32' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='102' cy='8' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='102' cy='17' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='102' cy='26' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M114 1.5V25' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='114' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cellipse cx='114' cy='17' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cpath d='M126 1.5V18' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='126' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='126' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3C/g%3E%3C/svg%3E");
+  --mid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='30'%3E%3Cpath d='M0 1.5H40' stroke='%23d9b46a' stroke-width='1.2'/%3E%3Cpath d='M10 1.5V16' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='10' cy='8' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3Cpath d='M30 1.5V26' stroke='%238a6a2a' stroke-width='.7'/%3E%3Cellipse cx='30' cy='8' rx='2.2' ry='2.8' fill='%23ffb347'/%3E%3Cellipse cx='30' cy='17' rx='2.2' ry='2.8' fill='%23fff0a8'/%3E%3Cellipse cx='30' cy='26' rx='2.2' ry='2.8' fill='%23ffd76a'/%3E%3C/svg%3E");
+}
+
+/* Shared by the curtain family: the swag-of-lights breaker between plain sections */
+html[data-theme="cascade"] [data-sec="looking"]::before, html[data-theme="cascade"] [data-collection="skincareMakeup"]::before,
+html[data-theme="cascade"] [data-sec="ingredients"]::before, html[data-theme="cascade"] [data-sec="celebs"]::before,
+html[data-theme="frame"] [data-sec="looking"]::before, html[data-theme="frame"] [data-collection="skincareMakeup"]::before,
+html[data-theme="frame"] [data-sec="ingredients"]::before, html[data-theme="frame"] [data-sec="celebs"]::before {
+  height: 26px;
+  background:
+    var(--lights) calc(50% - 30px) 0 / 60px 26px no-repeat,
+    var(--lights) calc(50% + 30px) 0 / 60px 26px no-repeat,
+    linear-gradient(90deg, transparent, #d9b46a) left 3px / 70px 1px no-repeat,
+    linear-gradient(90deg, #d9b46a, transparent) right 3px / 70px 1px no-repeat;
+  filter: drop-shadow(0 0 3px rgba(255, 200, 80, .8));
+}
+
+
+/* =========================================================
+   D. CURTAIN CASCADE — full width; longer, denser strands that fade into the
+   panel, with alternate bulbs chasing on and off; warm glow under the lights
+   ========================================================= */
+html[data-theme="cascade"] .sp {
+  padding-top: 92px;
+  background:
+    radial-gradient(ellipse 70% 120px at 50% 0, rgba(255, 196, 92, .22), transparent),
+    var(--fw-dots) 0 0 / 420px 420px repeat, radial-gradient(ellipse 90% 60% at 50% 0, var(--n-2), transparent), var(--n-deep);
+}
+html[data-theme="cascade"] .sp::before,
+html[data-theme="cascade"] .sp::after {
+  content: ''; position: absolute; left: 0; right: 0; top: 0; height: 90px; z-index: 2;
+  -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent);
+  filter: drop-shadow(0 0 3px rgba(255, 200, 80, .9));
+}
+html[data-theme="cascade"] .sp::after { background: var(--casc-a) 0 0 / 60px 90px repeat-x; animation: chase 1.4s ease-in-out infinite alternate; }
+html[data-theme="cascade"] .sp::before { background: var(--casc-b) 0 0 / 60px 90px repeat-x; animation: chase 1.4s ease-in-out infinite alternate-reverse; }
+@keyframes chase { from { opacity: .35; } to { opacity: 1; } }
+
+
+/* =========================================================
+   E. CURTAIN FRAME — full width; strands hang longest at both edges and shorten
+   toward the middle, framing the row like a stage curtain
+   ========================================================= */
+html[data-theme="frame"] .sp { padding-top: 92px; }
+html[data-theme="frame"] .sp::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 0; height: 92px; z-index: 2;
+  background: var(--edge-l) left top / 132px 92px no-repeat, var(--edge-r) right top / 132px 92px no-repeat;
+  filter: drop-shadow(0 0 3px rgba(255, 200, 80, .9));
+  animation: dwTwinkle 1.8s ease-in-out infinite alternate;
+}
+html[data-theme="frame"] .sp::after {
+  left: 132px; right: 132px; top: 0; height: 30px;
+  background: var(--mid) 0 0 / 40px 30px repeat-x;
+  animation: dwTwinkle 1.8s ease-in-out infinite alternate-reverse;
+}
+
+
+/* =========================================================
+   TIMER variations (html[data-timer], any theme). Default = live red pill.
+   ========================================================= */
+.countdown #countdown { font-variant-numeric: tabular-nums; }
+html[data-timer="gold"] .countdown {
+  background: linear-gradient(110deg, #c99435 0%, #f6dc9c 42%, #fff3cf 50%, #f6dc9c 58%, #c99435 100%) 0 0 / 250% 100%;
+  color: #071637; font-weight: 700;
+  box-shadow: 0 2px 10px rgba(201, 148, 53, .45);
+  animation: goldShine 3.5s linear infinite;
+}
+@keyframes goldShine { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+html[data-timer="blue"] .countdown {
+  background: linear-gradient(180deg, #17357f, #071637); color: #c9d2ea; font-weight: 600;
+  box-shadow: 0 0 0 1px #e9c27a, 0 4px 14px rgba(7, 22, 55, .35);
+}
+html[data-timer="blue"] #countdown { color: #f6dc9c; font-weight: 700; }
+
+
+/* =========================================================
+   DIVIDER variations (html[data-divider], Starry set only). Default = each theme's own.
+   ========================================================= */
+/* Dotted: a line of gold dots fading out at both ends, with a sparkle in the middle */
+html.starry-base[data-divider="dots"] :is([data-sec="looking"], [data-collection="skincareMakeup"], [data-sec="ingredients"], [data-sec="celebs"])::before {
+  height: 22px; filter: none;
+  animation: dwTwinkle 2.4s ease-in-out infinite alternate;
+  background:
+    var(--star-gold) center / 14px no-repeat,
+    radial-gradient(circle, #fff 10px, transparent 10.5px) center / 26px 22px no-repeat,
+    radial-gradient(circle, #d9a441 1.6px, transparent 2.1px) center / 10px 22px repeat-x;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+}
+
+
+/* =========================================================
+   F. CURTAIN DAY — fully light page: the four rows lose their navy blocks and
+   get a faint full-width blue wash; curtain lights and dividers
+   turn blue to match the banner. Header stays as finalised.
+   ========================================================= */
+html[data-theme="curtainday"] .sp { background: linear-gradient(180deg, #e9effb, #f6f8fd 140px, #fff 320px); }
+html[data-theme="curtainday"] .sp .ps-head h3 { background: none; color: var(--n); -webkit-text-fill-color: currentColor; }
+html[data-theme="curtainday"] .sp .ps-head h2 { color: #5b6788; }
+html[data-theme="curtainday"] .sp .card { background: transparent; padding: 0; border-radius: 0; }
+html[data-theme="curtainday"] .sp .card-img { border: .5px solid var(--line); }
+/* Recolour the gold lighting to blue */
+:root { --curtain-blue: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='52'%3E%3Cpath d='M0 1.5H80' stroke='%230c2259' stroke-width='1.2'/%3E%3Cpath d='M10 1.5V22' stroke='%230c2259' stroke-opacity='.55' stroke-width='.7'/%3E%3Cellipse cx='10' cy='9' rx='2.3' ry='2.9' fill='%232f5fd0'/%3E%3Cellipse cx='9.3' cy='8' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='10' cy='18.5' rx='2.3' ry='2.9' fill='%235b8bf0'/%3E%3Cellipse cx='9.3' cy='17.5' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cpath d='M30 1.5V40' stroke='%230c2259' stroke-opacity='.55' stroke-width='.7'/%3E%3Cellipse cx='30' cy='9' rx='2.3' ry='2.9' fill='%235b8bf0'/%3E%3Cellipse cx='29.3' cy='8' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='30' cy='18.5' rx='2.3' ry='2.9' fill='%2317357f'/%3E%3Cellipse cx='29.3' cy='17.5' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='30' cy='28.0' rx='2.3' ry='2.9' fill='%232f5fd0'/%3E%3Cellipse cx='29.3' cy='27.0' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='30' cy='37.5' rx='2.3' ry='2.9' fill='%235b8bf0'/%3E%3Cellipse cx='29.3' cy='36.5' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cpath d='M50 1.5V28' stroke='%230c2259' stroke-opacity='.55' stroke-width='.7'/%3E%3Cellipse cx='50' cy='9' rx='2.3' ry='2.9' fill='%2317357f'/%3E%3Cellipse cx='49.3' cy='8' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='50' cy='18.5' rx='2.3' ry='2.9' fill='%232f5fd0'/%3E%3Cellipse cx='49.3' cy='17.5' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='50' cy='28.0' rx='2.3' ry='2.9' fill='%235b8bf0'/%3E%3Cellipse cx='49.3' cy='27.0' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cpath d='M70 1.5V48' stroke='%230c2259' stroke-opacity='.55' stroke-width='.7'/%3E%3Cellipse cx='70' cy='9' rx='2.3' ry='2.9' fill='%232f5fd0'/%3E%3Cellipse cx='69.3' cy='8' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='70' cy='18.5' rx='2.3' ry='2.9' fill='%235b8bf0'/%3E%3Cellipse cx='69.3' cy='17.5' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='70' cy='28.0' rx='2.3' ry='2.9' fill='%2317357f'/%3E%3Cellipse cx='69.3' cy='27.0' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='70' cy='37.5' rx='2.3' ry='2.9' fill='%232f5fd0'/%3E%3Cellipse cx='69.3' cy='36.5' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3Cellipse cx='70' cy='47.0' rx='2.3' ry='2.9' fill='%235b8bf0'/%3E%3Cellipse cx='69.3' cy='46.0' rx='.7' ry='.9' fill='%23fff' fill-opacity='.8'/%3E%3C/svg%3E"); }
+html[data-theme="curtainday"] .sp::after { background-image: var(--curtain-blue); filter: drop-shadow(0 0 3px rgba(70, 120, 235, .55)); }
+html.starry-base[data-theme="curtainday"] :is([data-sec="looking"], [data-collection="skincareMakeup"], [data-sec="ingredients"], [data-sec="celebs"])::before {
+  filter: hue-rotate(185deg) saturate(2.4) brightness(.6) drop-shadow(0 0 3px rgba(70, 120, 235, .5));
+}
+
+
+/* =========================================================
+   G. CURTAIN NIGHT — the whole homepage goes navy; curtain lights
+   along the four rows, gold headings, cards on white. Header, CTAs, tabs,
+   offer bar and footer stay as live.
+   ========================================================= */
+html[data-theme="curtainnight"] body { background: var(--n-deep); }
+html[data-theme="curtainnight"] main { background: var(--n-deep); }
+html[data-theme="curtainnight"] .sp { background: none; }
+html[data-theme="curtainnight"] .sec-title, html[data-theme="curtainnight"] .ps-head h3 {
+  background: var(--gold-text); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+html[data-theme="curtainnight"] .ps-head h2 { color: #c9d2ea; }
+html[data-theme="curtainnight"] .eyebrow { color: var(--gold); }
+html[data-theme="curtainnight"] .product-section .view-all { background: #fff; padding: 4px 10px; border-radius: 8px; }
+html[data-theme="curtainnight"] .tab.active { background: #f2f9f9; }
+html[data-theme="curtainnight"] .product-section .card { background: #fff; border-radius: 12px; padding: 6px 6px 8px; }
+html[data-theme="curtainnight"] .product-section .card-img { border: 0; }
+html[data-theme="curtainnight"] .circle-row a, html[data-theme="curtainnight"] .promise img { background: #fdf6e7; border-radius: 18px; }
+html[data-theme="curtainnight"] .promise p { color: #dfe5f5; }
+html[data-theme="curtainnight"] .promise strong { color: var(--gold-2); }
+html[data-theme="curtainnight"] .dots i { background: rgba(255, 255, 255, .25); }
+html[data-theme="curtainnight"] .dots i.on { background: var(--gold); }
+html[data-theme="curtainnight"] .progress::before { background: rgba(255, 255, 255, .2); }
+html[data-theme="curtainnight"] .progress span { background: var(--gold); }
+/* Dotted divider: swap its white backing disc for navy */
+html.starry-base[data-theme="curtainnight"][data-divider="dots"] :is([data-sec="looking"], [data-collection="skincareMakeup"], [data-sec="ingredients"], [data-sec="celebs"])::before {
+  background:
+    var(--star-gold) center / 14px no-repeat,
+    radial-gradient(circle, var(--n-deep) 10px, transparent 10.5px) center / 26px 22px no-repeat,
+    radial-gradient(circle, #d9a441 1.6px, transparent 2.1px) center / 10px 22px repeat-x;
+}

@@ -1,0 +1,299 @@
+/* Diwali theme variations. Each theme is scoped to html[data-theme="…"] (set by theme.js);
+   with no data-theme the page is the untouched current homepage. */
+
+:root {
+  --orn-maroon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cg fill='%238a1538'%3E%3Cpath d='M9 0l3 3-3 3-3-3z'/%3E%3Cpath d='M3 6l3 3-3 3-3-3z'/%3E%3Cpath d='M15 6l3 3-3 3-3-3z'/%3E%3Cpath d='M9 12l3 3-3 3-3-3z'/%3E%3C/g%3E%3C/svg%3E");
+  --orn-gold: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cg fill='%23f0c35a'%3E%3Cpath d='M9 0l3 3-3 3-3-3z'/%3E%3Cpath d='M3 6l3 3-3 3-3-3z'/%3E%3Cpath d='M15 6l3 3-3 3-3-3z'/%3E%3Cpath d='M9 12l3 3-3 3-3-3z'/%3E%3C/g%3E%3C/svg%3E");
+  --lights: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='26'%3E%3Cpath d='M0 3Q30 22 60 3' fill='none' stroke='%23d9b46a' stroke-width='1.2'/%3E%3Cpath d='M15 10.5v2.5M30 12.5v2.5M45 10.5v2.5' stroke='%238a6a2a' stroke-width='.8'/%3E%3Cellipse cx='15' cy='16' rx='2.6' ry='3.4' fill='%23ffd76a'/%3E%3Cellipse cx='30' cy='18' rx='2.6' ry='3.4' fill='%23ffb347'/%3E%3Cellipse cx='45' cy='16' rx='2.6' ry='3.4' fill='%23fff0a8'/%3E%3C/svg%3E");
+  --garland: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='26'%3E%3Cpath d='M0 2Q40 30 80 2' fill='none' stroke='%23a0662a'/%3E%3Cg stroke='%23000' stroke-opacity='.12'%3E%3Ccircle cx='8' cy='7' r='4.3' fill='%23f9b928'/%3E%3Ccircle cx='16' cy='11' r='4.3' fill='%23f2801b'/%3E%3Ccircle cx='24' cy='13.8' r='4.3' fill='%23f9b928'/%3E%3Ccircle cx='32' cy='15.4' r='4.3' fill='%23f2801b'/%3E%3Ccircle cx='40' cy='16' r='4.3' fill='%23f9b928'/%3E%3Ccircle cx='48' cy='15.4' r='4.3' fill='%23f2801b'/%3E%3Ccircle cx='56' cy='13.8' r='4.3' fill='%23f9b928'/%3E%3Ccircle cx='64' cy='11' r='4.3' fill='%23f2801b'/%3E%3Ccircle cx='72' cy='7' r='4.3' fill='%23f9b928'/%3E%3C/g%3E%3Cpath d='M40 20v5' stroke='%2367892a' stroke-width='2'/%3E%3Cellipse cx='0' cy='3' rx='3' ry='5' fill='%2367892a'/%3E%3Cellipse cx='80' cy='3' rx='3' ry='5' fill='%2367892a'/%3E%3C/svg%3E");
+  --diya: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22'%3E%3Cpath d='M12 1c2.4 3 3.2 5.2 0 8.6C8.8 6.2 9.6 4 12 1z' fill='%23ffb21e'/%3E%3Cpath d='M12 4.5c1 1.4 1.2 2.6 0 4-1.2-1.4-1-2.6 0-4z' fill='%23fff3b0'/%3E%3Cpath d='M2 11h20c-1.2 5.6-5.2 9-10 9S3.2 16.6 2 11z' fill='%23c8641c'/%3E%3Cpath d='M4.5 13.5h15' stroke='%23f6c35a' stroke-width='1.2' stroke-dasharray='1.5 1.8'/%3E%3C/svg%3E");
+  --dots-pink: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10'%3E%3Cpath d='M7 2l3 3-3 3-3-3z' fill='none' stroke='%23f2b8c8' stroke-width='1.3'/%3E%3C/svg%3E");
+  --dots-maroon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10'%3E%3Cpath d='M7 2l3 3-3 3-3-3z' fill='none' stroke='%23c4577c' stroke-width='1.3'/%3E%3C/svg%3E");
+  --dots-gold: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10'%3E%3Cpath d='M7 2l3 3-3 3-3-3z' fill='%23fff' stroke='%23d9a441' stroke-width='1.3'/%3E%3C/svg%3E");
+  --rangoli: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23e0a43a' stroke-opacity='.4' stroke-width='1.4'%3E%3Ccircle cx='50' cy='50' r='8'/%3E%3Ccircle cx='50' cy='50' r='45' stroke-dasharray='2 4'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14' transform='rotate(45 50 50)'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14' transform='rotate(90 50 50)'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14' transform='rotate(135 50 50)'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14' transform='rotate(180 50 50)'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14' transform='rotate(225 50 50)'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14' transform='rotate(270 50 50)'/%3E%3Cellipse cx='50' cy='27' rx='7' ry='14' transform='rotate(315 50 50)'/%3E%3C/g%3E%3C/svg%3E");
+  --lantern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 28'%3E%3Cpath d='M5 3h10l3 19H2z' fill='%23ffb547'/%3E%3Cpath d='M7 3h6l1.5 19h-9z' fill='%23ffe08a' opacity='.7'/%3E%3Crect x='6' y='22' width='8' height='2' rx='1' fill='%23c25b10'/%3E%3Ccircle cx='10' cy='25.5' r='1.6' fill='%23ffd76a'/%3E%3C/svg%3E");
+  --star-gold: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0c.8 5.2 4.8 9.2 10 10-5.2.8-9.2 4.8-10 10-.8-5.2-4.8-9.2-10-10C5.2 9.2 9.2 5.2 10 0z' fill='%23d4a03a'/%3E%3C/svg%3E");
+  --rule-brown: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='10'%3E%3Cpath d='M4 5l4-4 4 4-4 4z' fill='%23a85a1c'/%3E%3Cpath d='M14 5l3-3 3 3-3 3z' fill='%23a85a1c'/%3E%3Cpath d='M22 5h68' stroke='%23c98a4a'/%3E%3C/svg%3E");
+}
+
+/* Decorative elements injected by theme.js stay hidden unless a theme turns them on */
+.dw { display: none; pointer-events: none; }
+.site-header { position: sticky; }
+[data-sec] { position: relative; }
+
+/* Shared helpers */
+.dw-lights {
+  position: absolute; left: 0; right: 0; bottom: -14px; height: 26px; z-index: 2;
+  background: var(--lights) 0 0 / 60px 26px repeat-x;
+  filter: drop-shadow(0 0 3px rgba(255, 200, 80, .9));
+  animation: dwTwinkle 1.8s ease-in-out infinite alternate;
+}
+@keyframes dwTwinkle { from { opacity: .6; } to { opacity: 1; } }
+.dw-garland {
+  position: absolute; left: 0; right: 0; bottom: -18px; height: 26px; z-index: 2;
+  background: var(--garland) 0 0 / 80px 26px repeat-x;
+}
+.dw-lanterns { position: absolute; inset: 0; overflow: hidden; }
+.dw-lanterns i {
+  position: absolute; width: 14px; height: 20px;
+  background: var(--lantern) center / contain no-repeat;
+  filter: drop-shadow(0 0 6px rgba(255, 190, 80, .9));
+  animation: dwFloat 6s ease-in-out infinite;
+}
+.dw-lanterns i:nth-child(1) { left: 3%; top: 10px; }
+.dw-lanterns i:nth-child(2) { left: 14%; top: 34px; width: 10px; height: 14px; animation-delay: -2s; }
+.dw-lanterns i:nth-child(3) { right: 4%; top: 6px; animation-delay: -4s; }
+.dw-lanterns i:nth-child(4) { right: 16%; top: 30px; width: 10px; height: 14px; animation-delay: -1s; }
+@keyframes dwFloat { 0%, 100% { transform: translate(0, 0) rotate(-4deg); } 50% { transform: translate(3px, -7px) rotate(4deg); } }
+@keyframes dwFlicker { 0%, 100% { transform: scale(1); filter: brightness(1); } 40% { transform: scale(1.06, .96); filter: brightness(1.15); } 70% { transform: scale(.97, 1.04); } }
+
+/* Full-bleed panel for sections that live inside .container */
+.dw-bleed { box-shadow: 0 0 0 100vmax var(--panel); clip-path: inset(0 -100vmax); background: var(--panel); }
+
+
+/* =========================================================
+   1. MAROON & GOLD — rich maroon header, string lights, serif headings
+   ========================================================= */
+html[data-theme="maroon"] {
+  --m-deep: #5c0a27; --m: #7d1036; --m-gold: #f0c35a; --m-cream: #fff7ec;
+}
+html[data-theme="maroon"] .site-header { background: var(--m-deep); }
+html[data-theme="maroon"] .site-header .icon-btn { color: #fff; }
+html[data-theme="maroon"] .logo img { filter: brightness(0) invert(1); }
+html[data-theme="maroon"] .cart-count { background: var(--m-gold); color: var(--m-deep); }
+html[data-theme="maroon"] .search-wrap { box-shadow: none; padding-bottom: 14px; }
+html[data-theme="maroon"] .search { border-color: transparent; }
+html[data-theme="maroon"] .dw-lights { display: block; }
+html[data-theme="maroon"] .desk-nav a { color: #fff; }
+
+html[data-theme="maroon"] .sec-title,
+html[data-theme="maroon"] .ps-head h3 {
+  font-family: 'Playfair Display', Georgia, serif; font-weight: 700; letter-spacing: 0; color: var(--m); font-size: 22px;
+}
+html[data-theme="maroon"] .sec-title::before,
+html[data-theme="maroon"] .ps-head h3::before,
+html[data-theme="maroon"] .sec-title.center::after {
+  content: ''; display: inline-block; width: 13px; height: 13px; margin-right: 8px; vertical-align: 1px;
+  background: var(--orn-maroon) center / contain no-repeat;
+}
+html[data-theme="maroon"] .sec-title.center::after { margin: 0 0 0 8px; }
+html[data-theme="maroon"] .ps-head .view-all { color: var(--m); font-weight: 600; }
+html[data-theme="maroon"] .tab.active { border-color: var(--m); background: #fbeef2; color: var(--m); }
+html[data-theme="maroon"] .countdown {
+  background: linear-gradient(90deg, var(--m-deep), #a3184a); color: #ffe7a8;
+  box-shadow: 0 0 0 1px var(--m-gold), 0 0 0 4px #fff, 0 0 0 5px #f2d38a;
+}
+
+/* Categories become the big maroon festive block */
+html[data-theme="maroon"] [data-sec="categories"] {
+  --panel: var(--m); margin-top: 16px; padding-top: 30px; padding-bottom: 30px;
+  box-shadow: 0 0 0 100vmax var(--panel); clip-path: inset(0 -100vmax); background: var(--panel);
+}
+html[data-theme="maroon"] [data-sec="categories"]::before,
+html[data-theme="maroon"] [data-sec="categories"]::after {
+  content: ''; position: absolute; left: 50%; width: 100vw; transform: translateX(-50%); height: 10px;
+  background: var(--dots-pink) 0 0 / 14px 10px repeat-x;
+}
+html[data-theme="maroon"] [data-sec="categories"]::before { top: 8px; }
+html[data-theme="maroon"] [data-sec="categories"]::after { bottom: 8px; }
+html[data-theme="maroon"] [data-sec="categories"] .sec-title { color: var(--m-gold); text-align: center; }
+html[data-theme="maroon"] [data-sec="categories"] .sec-title::before,
+html[data-theme="maroon"] [data-sec="categories"] .sec-title::after {
+  content: ''; display: inline-block; width: 13px; height: 13px; margin: 0 8px; vertical-align: 1px;
+  background: var(--orn-gold) center / contain no-repeat;
+}
+html[data-theme="maroon"] [data-sec="categories"] .cat-grid a { box-shadow: 0 0 0 1.5px rgba(240, 195, 90, .7); }
+html[data-theme="maroon"] [data-sec="categories"] .btn-black { background: linear-gradient(180deg, #ffd978, #e8ad3c); color: var(--m-deep); }
+
+/* Cream panels with diamond-chain borders on a few product rows */
+html[data-theme="maroon"] [data-collection="trending"],
+html[data-theme="maroon"] [data-collection="monsoon"],
+html[data-theme="maroon"] [data-collection="newArrivals"] {
+  background: var(--m-cream); margin-top: 18px; padding-top: 30px; padding-bottom: 26px;
+}
+html[data-theme="maroon"] [data-collection="trending"]::before,
+html[data-theme="maroon"] [data-collection="monsoon"]::before,
+html[data-theme="maroon"] [data-collection="newArrivals"]::before,
+html[data-theme="maroon"] [data-collection="trending"]::after,
+html[data-theme="maroon"] [data-collection="monsoon"]::after,
+html[data-theme="maroon"] [data-collection="newArrivals"]::after {
+  content: ''; position: absolute; left: 0; right: 0; height: 10px;
+  background: var(--dots-maroon) 0 0 / 14px 10px repeat-x; opacity: .7;
+}
+html[data-theme="maroon"] .product-section { position: relative; }
+html[data-theme="maroon"] .product-section::before { top: 8px; }
+html[data-theme="maroon"] .product-section::after { bottom: 6px; }
+
+html[data-theme="maroon"] .offer-bar { background: linear-gradient(90deg, var(--m-deep), var(--m)); color: #fff; }
+html[data-theme="maroon"] .offer-bar .teal { color: var(--m-gold); }
+html[data-theme="maroon"] .tribe a { background: var(--m-cream); color: var(--m); }
+
+
+/* =========================================================
+   2. MARIGOLD TORAN — warm cream, marigold garland, rounded festive cards
+   ========================================================= */
+html[data-theme="marigold"] {
+  --g-brown: #7a3b12; --g-cream: #fff4dc; --g-sand: #fde6b8;
+}
+html[data-theme="marigold"] body { background: #fffaf0; }
+html[data-theme="marigold"] .site-header { background: #fdf0d2; }
+html[data-theme="marigold"] .search-wrap { box-shadow: none; padding-bottom: 22px; }
+html[data-theme="marigold"] .search { border-color: #f1dcae; }
+html[data-theme="marigold"] .dw-garland { display: block; }
+
+html[data-theme="marigold"] .sec-title,
+html[data-theme="marigold"] .ps-head h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; color: var(--g-brown);
+  font-size: 27px; line-height: 1.1; letter-spacing: 0;
+}
+html[data-theme="marigold"] .sec-title::after,
+html[data-theme="marigold"] .ps-head h3::after {
+  content: ''; display: block; width: 90px; height: 10px; margin-top: 6px;
+  background: var(--rule-brown) left center / 90px 10px no-repeat;
+}
+html[data-theme="marigold"] .sec-title.center::after { margin-left: auto; margin-right: auto; background-position: center; }
+html[data-theme="marigold"] .ps-head h2 { color: #9a6a43; margin-top: 6px; }
+html[data-theme="marigold"] .ps-head .view-all { color: var(--g-brown); font-weight: 600; }
+
+html[data-theme="marigold"] .product-section {
+  margin: 20px 12px 0; padding-top: 22px; padding-bottom: 20px; border-radius: 22px;
+  background: linear-gradient(180deg, var(--g-sand), var(--g-cream) 150px, #fff8ea);
+}
+html[data-theme="marigold"] .product-section .container { padding: 0 14px; }
+html[data-theme="marigold"] .product-section .rail { padding: 0 14px 4px; scroll-padding: 0 14px; }
+html[data-theme="marigold"] .tabs { gap: 2px; }
+html[data-theme="marigold"] .tab { border: 0; background: transparent; color: #8a5a35; padding: 7px 14px; border-radius: 12px 12px 0 0; }
+html[data-theme="marigold"] .tab.active { background: #fbd28e; color: var(--g-brown); font-weight: 600; }
+html[data-theme="marigold"] .card { background: #fff; border-radius: 14px; padding: 6px 6px 8px; }
+html[data-theme="marigold"] .card-img { border: 0; border-radius: 10px; }
+html[data-theme="marigold"] .countdown { background: var(--g-brown); color: #ffe2a8; }
+html[data-theme="marigold"] .btn-black { background: var(--g-brown); }
+html[data-theme="marigold"] .offer-bar { background: #fde2b0; }
+html[data-theme="marigold"] .offer-bar .teal { color: var(--g-brown); }
+html[data-theme="marigold"] .site-footer { background: #fdf0d2; }
+html[data-theme="marigold"] .tribe a { background: #fde6b8; color: var(--g-brown); }
+@media (min-width: 990px) {
+  html[data-theme="marigold"] .product-section { max-width: 1336px; margin: 28px auto 0; }
+}
+
+
+/* =========================================================
+   3. DIYA GLOW — light touch: flickering diya headings, rangoli watermarks
+   ========================================================= */
+html[data-theme="diya"] .site-header { border-bottom: 2px solid transparent; border-image: linear-gradient(90deg, transparent, #f0b54a, transparent) 1; }
+html[data-theme="diya"] .search-wrap { box-shadow: none; }
+html[data-theme="diya"] .sec-title,
+html[data-theme="diya"] .ps-head h3 { color: #6b1d12; }
+html[data-theme="diya"] .sec-title::before,
+html[data-theme="diya"] .ps-head h3::before {
+  content: ''; display: inline-block; width: 22px; height: 20px; margin-right: 6px; vertical-align: -2px;
+  background: var(--diya) center / contain no-repeat;
+  transform-origin: 50% 100%; animation: dwFlicker 2.2s ease-in-out infinite;
+}
+html[data-theme="diya"] .product-section::before {
+  content: ''; display: block; width: 240px; max-width: 70%; height: 20px; margin: 0 auto 18px;
+  background:
+    var(--diya) center / 20px 18px no-repeat,
+    linear-gradient(90deg, transparent, #e7b75b 35%, transparent 44%, transparent 56%, #e7b75b 65%, transparent) center / 100% 1px no-repeat;
+}
+html[data-theme="diya"] [data-sec="categories"],
+html[data-theme="diya"] [data-sec="promise"] {
+  background: var(--rangoli) right -50px top -40px / 150px no-repeat, var(--rangoli) left -60px bottom -50px / 160px no-repeat;
+}
+html[data-theme="diya"] .countdown { background: linear-gradient(90deg, #ff9a1f, #e2531b); box-shadow: 0 0 14px rgba(255, 150, 40, .45); }
+html[data-theme="diya"] .tab.active { border-color: #d98e1f; background: #fff6e6; color: #9a4b00; }
+html[data-theme="diya"] .ps-head .view-all { color: #b25e00; }
+html[data-theme="diya"] .card-img { transition: box-shadow .2s; }
+html[data-theme="diya"] .card:hover .card-img { box-shadow: 0 0 0 1px #f3d08a, 0 6px 18px rgba(240, 170, 60, .3); }
+html[data-theme="diya"] .offer-bar { background: linear-gradient(90deg, #fff1cf, #ffe2a6); }
+html[data-theme="diya"] .offer-bar .teal { color: #a24b00; }
+
+
+/* =========================================================
+   4. LANTERN NIGHT — deep festive band at the top with floating lanterns
+   ========================================================= */
+html[data-theme="lantern"] { --l-1: #9b1046; --l-2: #5e0a2b; --l-gold: #f6c86a; }
+html[data-theme="lantern"] .site-header { background: var(--l-2); }
+html[data-theme="lantern"] .site-header .icon-btn,
+html[data-theme="lantern"] .desk-nav a { color: #fff; }
+html[data-theme="lantern"] .logo img { filter: brightness(0) invert(1); }
+html[data-theme="lantern"] .cart-count { background: var(--l-gold); color: var(--l-2); }
+html[data-theme="lantern"] .search-wrap { box-shadow: none; }
+html[data-theme="lantern"] .search { border-color: transparent; }
+html[data-theme="lantern"] .hero,
+html[data-theme="lantern"] .countdown-wrap { background: var(--l-2); }
+html[data-theme="lantern"] .countdown-wrap { padding-bottom: 2px; }
+html[data-theme="lantern"] .countdown { background: var(--l-gold); color: var(--l-2); font-weight: 700; }
+html[data-theme="lantern"] [data-sec="categories"] {
+  background: linear-gradient(180deg, var(--l-2), var(--l-1)); padding-bottom: 30px;
+  max-width: none; padding-left: max(var(--gutter), calc((100vw - 1360px) / 2 + var(--gutter))); padding-right: max(var(--gutter), calc((100vw - 1360px) / 2 + var(--gutter)));
+}
+html[data-theme="lantern"] [data-sec="categories"]::after {
+  content: ''; position: absolute; left: 50%; width: 100vw; transform: translateX(-50%); bottom: -12px; height: 12px;
+  background: radial-gradient(circle at 10px 0, var(--l-1) 10px, transparent 10.5px) 0 0 / 20px 12px repeat-x;
+}
+html[data-theme="lantern"] .dw-lanterns { display: block; }
+html[data-theme="lantern"] [data-sec="categories"] .sec-title {
+  font-family: 'Playfair Display', Georgia, serif; color: var(--l-gold); text-align: center; font-size: 24px; letter-spacing: 0; position: relative; z-index: 1;
+}
+html[data-theme="lantern"] [data-sec="categories"] .sec-title::before {
+  content: "It's the festive season"; display: block; margin-bottom: 2px;
+  font: 600 10px/1.4 Inter, sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #ffd9e6;
+}
+html[data-theme="lantern"] .cat-grid a { border-radius: 40px 40px 10px 10px; box-shadow: 0 0 0 2px var(--l-gold); }
+html[data-theme="lantern"] [data-sec="categories"] .btn-black { background: var(--l-gold); color: var(--l-2); }
+html[data-theme="lantern"] .sec-title,
+html[data-theme="lantern"] .ps-head h3 { color: var(--l-1); font-weight: 700; }
+html[data-theme="lantern"] .ps-head h2 { color: #a0577a; }
+html[data-theme="lantern"] .ps-head .view-all { color: var(--l-1); font-weight: 600; }
+html[data-theme="lantern"] .tab.active { border-color: var(--l-1); background: #fdeef3; color: var(--l-1); }
+html[data-theme="lantern"] [data-sec="categories"] + .product-section { padding-top: 34px; }
+html[data-theme="lantern"] .offer-bar { background: linear-gradient(90deg, var(--l-2), var(--l-1)); color: #fff; }
+html[data-theme="lantern"] .offer-bar .teal { color: var(--l-gold); }
+
+
+/* =========================================================
+   5. GOLD ACCENT — the most subtle: gold sparkles + maroon accents only
+   ========================================================= */
+html[data-theme="minimal"] .sec-title::after,
+html[data-theme="minimal"] .ps-head h3::after {
+  content: ''; display: inline-block; width: 11px; height: 11px; margin-left: 6px; vertical-align: 6px;
+  background: var(--star-gold) center / contain no-repeat;
+}
+html[data-theme="minimal"] .countdown-wrap { background: var(--dots-gold) center / 14px 10px repeat-x; }
+html[data-theme="minimal"] .countdown { background: #7a0f34; color: #ffe08a; box-shadow: 0 0 0 4px #fff; }
+html[data-theme="minimal"] .tab.active { border-color: #b8862b; background: #fffaf0; color: #8a5a00; }
+html[data-theme="minimal"] .product-section .ps-head { border-left: 3px solid #d9a441; padding-left: 10px; margin-left: -13px; }
+html[data-theme="minimal"] .offer-bar { background: #7a0f34; color: #fff; }
+html[data-theme="minimal"] .offer-bar .teal { color: #ffd36b; }
+html[data-theme="minimal"] .footer-strip { border-top: 2px solid #e9c46a; }
+
+
+/* =========================================================
+   Review switch
+   ========================================================= */
+.review { position: fixed; right: 10px; bottom: 104px; z-index: 80; font: 500 12px/1.3 Inter, sans-serif; color: #111; }
+.review-pill { display: flex; align-items: center; gap: 2px; padding: 4px; border-radius: 22px; background: #111; color: #fff; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+.review-pill button { height: 30px; min-width: 30px; border-radius: 15px; color: #fff; display: inline-flex; align-items: center; justify-content: center; }
+.review-pill button:hover { background: rgba(255,255,255,.12); }
+.review-pill .rv-name { padding: 0 10px; gap: 6px; max-width: 170px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600; }
+.review-pill .rv-dot { width: 10px; height: 10px; border-radius: 50%; flex: none; box-shadow: 0 0 0 1px rgba(255,255,255,.5); }
+.review-panel { position: absolute; right: 0; bottom: 46px; width: 290px; max-height: min(70vh, 560px); overflow-y: auto; padding: 8px; border-radius: 14px; background: #fff; box-shadow: 0 12px 40px rgba(0,0,0,.25); display: none; }
+.review.open .review-panel { display: block; }
+.review-panel h5 { margin: 4px 8px 6px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #777; }
+.rv-opt { display: flex; gap: 10px; width: 100%; padding: 8px; border-radius: 10px; text-align: left; align-items: center; }
+.rv-opt:hover { background: #f6f6f6; }
+.rv-opt.on { background: #f1f1f1; box-shadow: inset 0 0 0 1.5px #111; }
+.rv-swatch { width: 30px; height: 30px; border-radius: 8px; flex: none; }
+.rv-opt b { display: block; font-size: 13px; }
+.rv-opt small { display: block; color: #666; font-size: 11px; }
+.rv-hint { margin: 6px 8px 2px; color: #888; font-size: 11px; }
+@media (min-width: 990px) {
+  .review { left: 24px; right: auto; bottom: 24px; }
+  .review-panel { left: 0; right: auto; }
+}
+/* Option rows (Timer / Divider) in the review panel */
+.rv-row { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin: 4px 8px 8px; }
+.rv-row > span { width: 52px; font-size: 11px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; color: #777; }
+.rv-chip { padding: 5px 10px; border-radius: 14px; border: 1px solid #ddd; font-size: 12px; font-weight: 500; }
+.rv-chip.on { background: #111; border-color: #111; color: #fff; }
